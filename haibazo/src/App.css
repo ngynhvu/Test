@@ -1,0 +1,147 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+body {
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #ff6b6b;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #ff3b3b;
+  transform: translateY(-3px);
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.game-board {
+  margin: 20px auto;
+  width: 300px;
+  height: 300px;
+  border: 3px dashed white;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.circle {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #ffcc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: black;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.circle:hover {
+  background-color: #ffe066;
+  transform: scale(1.1);
+}
+.level:focus{
+  background-color: #ff3b3b;
+  transform: translateY(-3px);
+}
+
+.message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.guide-note {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 15px;
+  margin: 10px auto;
+  border: 2px solid #ff6b6b;
+  border-radius: 8px;
+  text-align: left;
+  width: 80%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.guide-note h3 {
+  color: #ff6b6b;
+  margin-bottom: 10px;
+}
+
+.guide-note ul {
+  list-style: square;
+  padding-left: 20px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
